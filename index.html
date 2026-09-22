@@ -1,0 +1,3118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maha Schemes | Government of Maharashtra</title>
+
+<style>
+
+:root{
+    --navy:#073b68;
+    --blue:#0d6efd;
+    --green:#438f3d;
+    --lightgreen:#63a83f;
+    --bg:#f4f8fc;
+    --text:#183247;
+    --muted:#6b7b88;
+    --card:#fff;
+    --border:#dbe5ed;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:"Segoe UI",Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+
+/* =========================
+   LANDING PAGE
+========================= */
+
+#landingPage{
+    min-height:100vh;
+    background:#fff;
+}
+
+
+/* TOP BAR */
+
+.topbar{
+    background:var(--navy);
+    color:white;
+    padding:9px 5%;
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+}
+
+
+/* HEADER */
+
+.landing-header{
+    background:white;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid var(--border);
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:82px;
+    height:82px;
+    object-fit:contain;
+}
+
+.brand-name{
+    font-size:34px;
+    font-weight:900;
+    color:var(--navy);
+}
+
+.brand-name span{
+    color:var(--green);
+}
+
+.brand-sub{
+    color:#607985;
+    font-size:13px;
+}
+
+.gov{
+    text-align:right;
+    color:#214b5e;
+    font-size:13px;
+}
+
+
+/* LANDING NAV */
+
+.landing-nav{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:45px;
+    padding:14px;
+    border-bottom:1px solid var(--border);
+}
+
+.landing-nav a{
+    text-decoration:none;
+    color:#28566a;
+    font-weight:600;
+    font-size:14px;
+}
+
+
+/* LANGUAGE */
+
+.language{
+    position:absolute;
+    right:5%;
+    margin-top:15px;
+    z-index:10;
+}
+
+.language select{
+    padding:9px 14px;
+    border:1px solid #b7cbd4;
+    border-radius:8px;
+    background:white;
+    font-weight:600;
+}
+
+
+/* HERO */
+
+.landing-hero{
+
+    min-height:560px;
+
+    background:
+    linear-gradient(
+        rgba(4,48,70,.68),
+        rgba(4,48,70,.58)
+    ),
+    url("https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:850px;
+    padding:50px 25px;
+}
+
+.hero-tag{
+    background:rgba(255,255,255,.16);
+    padding:8px 17px;
+    border-radius:30px;
+    font-size:13px;
+}
+
+.hero-title{
+    margin-top:25px;
+    font-size:60px;
+    margin-bottom:5px;
+}
+
+.hero-title span{
+    color:#7fc34d;
+}
+
+.hero-subtitle{
+    font-size:25px;
+    font-weight:500;
+}
+
+.hero-text{
+    margin:22px auto;
+    max-width:720px;
+    font-size:17px;
+    line-height:1.7;
+}
+
+
+/* GO */
+
+.go-btn{
+
+    margin-top:15px;
+
+    padding:16px 55px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--lightgreen);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 7px 20px rgba(0,0,0,.25);
+
+    transition:.25s;
+}
+
+.go-btn:hover{
+    background:#4f9133;
+    transform:translateY(-3px);
+}
+
+
+/* FEATURES */
+
+.features{
+    background:white;
+    padding:55px 5%;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.section-heading h2{
+    color:var(--navy);
+}
+
+.section-heading p{
+    color:var(--muted);
+}
+
+.feature-grid{
+
+    max-width:1150px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+}
+
+.feature{
+
+    background:#f5f9fa;
+
+    border:1px solid #e1ebef;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.25s;
+}
+
+.feature:hover{
+    transform:translateY(-5px);
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+}
+
+.feature-icon{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.feature h3{
+    color:var(--navy);
+}
+
+.feature p{
+    color:#637983;
+    font-size:13px;
+    line-height:1.5;
+}
+
+
+/* VISUALS */
+
+.visual-section{
+    padding:55px 5%;
+    background:#eef5f6;
+}
+
+.visual-grid{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+}
+
+.visual-card{
+
+    height:230px;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    box-shadow:
+    0 7px 22px rgba(0,0,0,.12);
+}
+
+.visual-card img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s;
+}
+
+.visual-card:hover img{
+    transform:scale(1.08);
+}
+
+.visual-overlay{
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+    right:0;
+
+    padding:18px;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+}
+
+
+/* IDEA */
+
+.idea{
+
+    background:white;
+
+    padding:60px 8%;
+}
+
+.idea-container{
+
+    max-width:1050px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+}
+
+.idea h2{
+    color:var(--navy);
+    font-size:32px;
+}
+
+.idea p{
+    color:#5d737d;
+    line-height:1.8;
+}
+
+.idea ul{
+    list-style:none;
+    padding:0;
+}
+
+.idea li{
+    padding:8px 0;
+}
+
+.idea li::before{
+    content:"✓";
+    color:var(--green);
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.idea img{
+
+    width:100%;
+
+    height:310px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+}
+
+
+/* QUOTE */
+
+.quote{
+
+    background:var(--navy);
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:20px;
+}
+
+
+/* =========================
+   PORTAL
+========================= */
+
+#portal{
+
+    display:none;
+
+    min-height:100vh;
+}
+
+.top{
+
+    height:72px;
+
+    background:white;
+
+    border-bottom:
+    1px solid var(--border);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 38px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:20;
+}
+
+.portal-brand{
+
+    font-weight:900;
+
+    font-size:26px;
+
+    color:var(--navy);
+}
+
+.portal-brand span{
+    color:var(--green);
+}
+
+.layout{
+    display:flex;
+    min-height:calc(100vh - 72px);
+}
+
+.side{
+
+    width:245px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #073b68,
+        #07507f
+    );
+
+    color:white;
+
+    padding:24px 15px;
+
+    position:fixed;
+
+    top:72px;
+    bottom:0;
+}
+
+.side button{
+
+    width:100%;
+
+    border:0;
+
+    background:transparent;
+
+    color:#eaf5ff;
+
+    text-align:left;
+
+    padding:13px 15px;
+
+    border-radius:10px;
+
+    margin:3px 0;
+
+    font-size:14px;
+
+    cursor:pointer;
+}
+
+.side button.active,
+.side button:hover{
+
+    background:
+    rgba(255,255,255,.13);
+}
+
+.side .small{
+
+    margin:
+    0 15px 18px;
+
+    color:#b9d8ee;
+
+    font-size:12px;
+}
+
+.main{
+
+    margin-left:245px;
+
+    width:calc(100% - 245px);
+
+    padding:34px;
+
+    max-width:1500px;
+}
+
+.page{
+    display:none;
+}
+
+.page.active{
+    display:block;
+}
+
+.hero{
+
+    background:
+    linear-gradient(
+        120deg,
+        #eaf5ff,
+        #fff
+    );
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:36px;
+
+    display:grid;
+
+    grid-template-columns:
+    1.4fr .8fr;
+
+    gap:28px;
+
+    align-items:center;
+}
+
+.hero h1{
+
+    font-size:42px;
+
+    margin:
+    0 0 10px;
+
+    color:var(--navy);
+}
+
+.hero h1 span{
+    color:var(--green);
+}
+
+.hero p{
+
+    font-size:17px;
+
+    line-height:1.6;
+
+    color:#526575;
+}
+
+.btn{
+
+    background:var(--blue);
+
+    color:white;
+
+    border:0;
+
+    border-radius:9px;
+
+    padding:
+    12px 18px;
+
+    font-weight:800;
+
+    cursor:pointer;
+}
+
+.btn.green{
+    background:var(--green);
+}
+
+.btn.light{
+
+    background:#edf5fb;
+
+    color:var(--navy);
+}
+
+.card{
+
+    background:white;
+
+    border:
+    1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:22px;
+
+    margin-bottom:18px;
+
+    box-shadow:
+    0 5px 20px
+    rgba(10,48,80,.04);
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:16px;
+}
+
+.grid3{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:16px;
+}
+
+.field label{
+
+    display:block;
+
+    font-size:13px;
+
+    font-weight:800;
+
+    margin-bottom:7px;
+}
+
+.field input,
+.field select,
+.field textarea{
+
+    width:100%;
+
+    border:
+    1px solid #ccd9e2;
+
+    border-radius:8px;
+
+    padding:11px;
+
+    background:white;
+
+    font:inherit;
+}
+
+.field textarea{
+
+    min-height:90px;
+
+    resize:vertical;
+}
+
+.full{
+    grid-column:1/-1;
+}
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    margin-bottom:14px;
+}
+
+.stat{
+
+    background:white;
+
+    border:
+    1px solid var(--border);
+
+    border-radius:14px;
+
+    padding:18px;
+}
+
+.stat b{
+
+    font-size:28px;
+
+    color:var(--navy);
+
+    display:block;
+}
+
+.stat small{
+    color:var(--muted);
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    font-size:13px;
+}
+
+th,td{
+
+    text-align:left;
+
+    padding:12px;
+
+    border-bottom:
+    1px solid var(--border);
+
+    vertical-align:top;
+}
+
+th{
+
+    background:#f6f9fb;
+
+    color:var(--navy);
+}
+
+.pill{
+
+    display:inline-block;
+
+    border-radius:99px;
+
+    padding:5px 9px;
+
+    font-size:11px;
+
+    font-weight:800;
+
+    background:#fff0ec;
+
+    color:#c53b27;
+}
+
+.pill.green{
+
+    background:#eaf8ef;
+
+    color:#14763e;
+}
+
+.scheme{
+
+    height:100%;
+
+    border:
+    1px solid var(--border);
+
+    border-radius:14px;
+
+    padding:18px;
+}
+
+.scheme h3{
+    color:var(--navy);
+}
+
+.scheme p{
+
+    font-size:13px;
+
+    line-height:1.45;
+
+    color:#596c7b;
+}
+
+.notice{
+
+    background:#fff8e8;
+
+    border-left:
+    4px solid #e7a927;
+
+    padding:13px 15px;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    border-radius:8px;
+}
+
+.timeline{
+
+    display:flex;
+
+    margin-top:10px;
+}
+
+.step{
+
+    flex:1;
+
+    border-top:
+    4px solid #dfe7ee;
+
+    padding:12px 7px;
+
+    text-align:center;
+
+    font-size:12px;
+}
+
+.step.done{
+    border-color:var(--green);
+}
+
+.step.ready{
+    border-color:var(--blue);
+}
+
+.empty{
+
+    padding:28px;
+
+    text-align:center;
+
+    color:var(--muted);
+
+    border:
+    1px dashed #cbd8e1;
+
+    border-radius:12px;
+}
+
+.profile-chip{
+
+    background:#eef6fc;
+
+    color:var(--navy);
+
+    padding:8px 11px;
+
+    border-radius:9px;
+
+    font-size:12px;
+
+    font-weight:800;
+}
+
+.actions{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+}
+
+.footer{
+
+    text-align:center;
+
+    color:#7b8994;
+
+    font-size:12px;
+
+    padding:30px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .feature-grid,
+    .visual-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .idea-container{
+        grid-template-columns:1fr;
+    }
+
+    .gov{
+        display:none;
+    }
+
+    .side{
+        width:190px;
+    }
+
+    .main{
+        margin-left:190px;
+        width:calc(100% - 190px);
+        padding:20px;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+    }
+
+    .grid,
+    .grid3{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .topbar{
+        display:none;
+    }
+
+    .landing-header{
+        padding:12px;
+    }
+
+    .landing-nav{
+        gap:20px;
+        overflow-x:auto;
+        justify-content:flex-start;
+    }
+
+    .hero-title{
+        font-size:40px;
+    }
+
+    .feature-grid,
+    .visual-grid{
+        grid-template-columns:1fr;
+    }
+
+    .side{
+        display:none;
+    }
+
+    .main{
+        margin-left:0;
+        width:100%;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     LANDING PAGE
+===================================================== -->
+
+<div id="landingPage">
+
+
+    <div class="topbar">
+
+        <div>
+            Government of Maharashtra |
+            Industries, Investment & Schemes Facilitation
+        </div>
+
+        <div>
+            Aaple Sarkar &nbsp; | &nbsp; Help
+        </div>
+
+    </div>
+
+
+    <header class="landing-header">
+
+        <div class="brand">
+
+            <img
+                src="{{ url_for('static', filename='maha-schemes-logo.png') }}"
+                class="logo"
+                alt="Maha Schemes Logo"
+            >
+
+            <div>
+
+                <div class="brand-name">
+                    MAHA <span>SCHEMES</span>
+                </div>
+
+                <div class="brand-sub">
+                    Growth • Schemes • Support
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="gov">
+
+            <b>
+                GOVERNMENT OF MAHARASHTRA
+            </b>
+
+            <br>
+
+            Schemes & Business Facilitation
+
+        </div>
+
+    </header>
+
+
+    <nav class="landing-nav">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#schemesInfo">
+            Schemes
+        </a>
+
+        <a href="#guidance">
+            Guidance
+        </a>
+
+        <a href="#about">
+            About Us
+        </a>
+
+    </nav>
+
+
+    <div class="language">
+
+        <select id="languageSelector">
+
+            <option value="en">
+                English
+            </option>
+
+            <option value="mr">
+                मराठी
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- HERO -->
+
+    <section
+        class="landing-hero"
+        id="home"
+    >
+
+        <div class="hero-content">
+
+            <span
+                class="hero-tag"
+                id="heroTag"
+            >
+                Maharashtra • Citizens • Entrepreneurs • Businesses
+            </span>
+
+
+            <h1
+                class="hero-title"
+                id="heroTitle"
+            >
+                MAHA <span>SCHEMES</span>
+            </h1>
+
+
+            <div
+                class="hero-subtitle"
+                id="heroSubtitle"
+            >
+                Your Gateway to Maharashtra's Schemes & Opportunities
+            </div>
+
+
+            <p
+                class="hero-text"
+                id="heroText"
+            >
+                Discover government schemes, business support,
+                approvals, guidance and opportunities designed
+                to help citizens, farmers, entrepreneurs and
+                businesses grow across Maharashtra.
+            </p>
+
+
+            <!-- IMPORTANT:
+                 THIS BUTTON OPENS THE PROFILE INSIDE
+                 THE SAME HTML PAGE.
+            -->
+
+            <button
+                class="go-btn"
+                id="goButton"
+                onclick="openPortal()"
+            >
+                GO →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section
+        class="features"
+        id="schemesInfo"
+    >
+
+        <div class="section-heading">
+
+            <h2>
+                One Platform. Multiple Opportunities.
+            </h2>
+
+            <p>
+                Everything you need to discover and understand
+                government support.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📄
+                </div>
+
+                <h3>
+                    Find Schemes
+                </h3>
+
+                <p>
+                    Discover schemes and support programs
+                    relevant to your needs.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⚙️
+                </div>
+
+                <h3>
+                    Know Approvals
+                </h3>
+
+                <p>
+                    Understand required approvals and
+                    documentation for your business.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🧭
+                </div>
+
+                <h3>
+                    Get Guidance
+                </h3>
+
+                <p>
+                    Get structured guidance about
+                    government processes.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📊
+                </div>
+
+                <h3>
+                    Track Progress
+                </h3>
+
+                <p>
+                    Keep applications and approvals
+                    organised.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- VISUALS -->
+
+    <section
+        class="visual-section"
+        id="guidance"
+    >
+
+        <div class="section-heading">
+
+            <h2>
+                Maharashtra • Heritage • Technology • Growth
+            </h2>
+
+            <p>
+                Connecting Maharashtra's heritage,
+                people, technology and businesses.
+            </p>
+
+        </div>
+
+
+        <div class="visual-grid">
+
+
+            <div class="visual-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=900&q=80"
+                    alt="Maharashtra Fort"
+                >
+
+                <div class="visual-overlay">
+
+                    <h3>
+                        Maharashtra Heritage
+                    </h3>
+
+                    <p>
+                        Preserving our history and identity.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="visual-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                    alt="Technology"
+                >
+
+                <div class="visual-overlay">
+
+                    <h3>
+                        Technology & Innovation
+                    </h3>
+
+                    <p>
+                        Building a technology-driven Maharashtra.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="visual-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80"
+                    alt="Agriculture"
+                >
+
+                <div class="visual-overlay">
+
+                    <h3>
+                        Agriculture & Farmers
+                    </h3>
+
+                    <p>
+                        Supporting farmers and rural growth.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="visual-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                    alt="Business"
+                >
+
+                <div class="visual-overlay">
+
+                    <h3>
+                        Business & Industry
+                    </h3>
+
+                    <p>
+                        Helping businesses discover opportunities.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- IDEA -->
+
+    <section
+        class="idea"
+        id="about"
+    >
+
+        <div class="idea-container">
+
+            <div>
+
+                <h2>
+                    From Idea to Impact
+                </h2>
+
+                <p>
+                    Maha Schemes is designed as a digital
+                    gateway connecting citizens, farmers,
+                    entrepreneurs and businesses with
+                    government schemes, approvals and
+                    business-support information.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Discover relevant government schemes
+                    </li>
+
+                    <li>
+                        Understand approvals and documentation
+                    </li>
+
+                    <li>
+                        Explore business opportunities
+                    </li>
+
+                    <li>
+                        Get simple, structured guidance
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+                alt="Business collaboration"
+            >
+
+        </div>
+
+    </section>
+
+
+    <div class="quote">
+        "From Idea to Impact – With Maharashtra"
+    </div>
+
+
+</div>
+
+
+<!-- =====================================================
+     PORTAL
+     SAME HTML FILE
+===================================================== -->
+
+<div id="portal">
+
+
+<header class="top">
+
+    <div class="portal-brand">
+
+        Maha <span>Schemes</span>
+
+    </div>
+
+    <button
+        class="btn light"
+        onclick="backToLanding()"
+    >
+        ← Home
+    </button>
+
+</header>
+
+
+<div class="layout">
+
+
+<aside class="side">
+
+    <div class="small">
+        SIH26130 • Intelligent approvals &
+        schemes portal
+    </div>
+
+
+    <button
+        class="nav active"
+        data-page="profile"
+    >
+        ◉ Business Profile
+    </button>
+
+
+    <button
+        class="nav"
+        data-page="plan"
+    >
+        ✓ Personalised Plan
+    </button>
+
+
+    <button
+        class="nav"
+        data-page="approvals"
+    >
+        ▣ Approvals
+    </button>
+
+
+    <button
+        class="nav"
+        data-page="schemes"
+    >
+        ₹ Government Schemes
+    </button>
+
+
+    <button
+        class="nav"
+        data-page="documents"
+    >
+        ▤ Documents
+    </button>
+
+
+    <button
+        class="nav"
+        data-page="tracker"
+    >
+        ◷ Application Tracker
+    </button>
+
+</aside>
+
+
+<main class="main">
+
+
+<!-- PROFILE -->
+
+<section
+    id="profile"
+    class="page active"
+>
+
+
+<div class="section-title">
+
+    <div>
+
+        <h2>
+            Business Profile
+        </h2>
+
+        <p>
+            Enter your details once.
+            Maha Schemes will build a
+            personalised checklist.
+        </p>
+
+    </div>
+
+
+    <span class="profile-chip">
+        No Login • No OTP
+    </span>
+
+</div>
+
+
+<div class="card">
+
+
+<div class="grid">
+
+
+<div class="field">
+
+<label>
+Full Name
+</label>
+
+<input
+    id="full_name"
+    placeholder="Your name"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Email
+</label>
+
+<input
+    id="email"
+    type="email"
+    placeholder="you@example.com"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Business Name
+</label>
+
+<input
+    id="business_name"
+    placeholder="Example Dairy Foods"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Business Type
+</label>
+
+<select id="business_type">
+
+<option>
+Dairy Processing
+</option>
+
+<option>
+Dairy Farming
+</option>
+
+<option>
+Food Processing
+</option>
+
+<option>
+Manufacturing
+</option>
+
+<option>
+IT / ITES
+</option>
+
+<option>
+Agriculture
+</option>
+
+<option>
+Startup
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field full">
+
+<label>
+Business Description
+</label>
+
+<textarea
+    id="description"
+    placeholder="Example: I want to start a small dairy processing unit producing milk, paneer and ghee."
+></textarea>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Business Stage
+</label>
+
+<select id="business_stage">
+
+<option>
+Idea
+</option>
+
+<option>
+New
+</option>
+
+<option>
+Existing
+</option>
+
+<option>
+Expansion
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+District
+</label>
+
+<input
+    id="district"
+    value="Pune"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Location Type
+</label>
+
+<select id="location_type">
+
+<option>
+Urban
+</option>
+
+<option>
+Rural
+</option>
+
+<option>
+MIDC
+</option>
+
+<option>
+Industrial Park
+</option>
+
+<option>
+SEZ
+</option>
+
+<option>
+Non-MIDC
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Investment Amount (₹)
+</label>
+
+<input
+    id="investment"
+    type="number"
+    value="500000"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Expected Employees
+</label>
+
+<input
+    id="employees"
+    type="number"
+    value="10"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Annual Turnover (₹)
+</label>
+
+<input
+    id="turnover"
+    type="number"
+    value="1000000"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Social Category
+</label>
+
+<select id="category">
+
+<option>
+General
+</option>
+
+<option>
+OBC
+</option>
+
+<option>
+SC
+</option>
+
+<option>
+ST
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Are you a Farmer?
+</label>
+
+<select id="farmer">
+
+<option>
+No
+</option>
+
+<option>
+Yes
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Woman-led Enterprise?
+</label>
+
+<select id="woman_led">
+
+<option>
+No
+</option>
+
+<option>
+Yes
+</option>
+
+</select>
+
+</div>
+
+
+</div>
+
+
+<div class="notice"
+     style="margin-top:20px">
+
+No login or email verification is required.
+The information is used to generate the
+prototype's personalised plan.
+
+</div>
+
+
+<div
+    style="margin-top:20px"
+    class="actions"
+>
+
+<button
+    class="btn light"
+    onclick="backToLanding()"
+>
+    ← Back
+</button>
+
+
+<button
+    class="btn green"
+    id="generateButton"
+    onclick="generatePlan()"
+>
+    Generate My Personalised Plan →
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- PLAN -->
+
+<section
+    id="plan"
+    class="page"
+>
+
+<div class="section-title">
+
+<div>
+
+<h2>
+Your Personalised Plan
+</h2>
+
+<p id="planSub">
+Complete the profile to generate your plan.
+</p>
+
+</div>
+
+<span
+    id="industryChip"
+    class="profile-chip"
+>
+Awaiting profile
+</span>
+
+</div>
+
+
+<div id="planContent">
+
+<div class="empty">
+Enter your business details and
+generate your plan.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- APPROVALS -->
+
+<section
+    id="approvals"
+    class="page"
+>
+
+<div class="section-title">
+
+<div>
+
+<h2>
+Required Approvals
+</h2>
+
+<p>
+Approval applicability, fees and
+timelines from the prototype dataset.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div
+    id="approvalTable"
+    class="empty"
+>
+Generate a plan first.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SCHEMES -->
+
+<section
+    id="schemes"
+    class="page"
+>
+
+<div class="section-title">
+
+<div>
+
+<h2>
+Government Schemes
+</h2>
+
+<p>
+Support records surfaced from the
+scheme dataset.
+</p>
+
+</div>
+
+</div>
+
+
+<div
+    id="schemeGrid"
+    class="grid3"
+>
+
+<div class="empty">
+Generate a plan first.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DOCUMENTS -->
+
+<section
+    id="documents"
+    class="page"
+>
+
+<div class="section-title">
+
+<div>
+
+<h2>
+Required Documents
+</h2>
+
+<p>
+Documents mapped to the selected approvals.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div
+    id="docTable"
+    class="empty"
+>
+Generate a plan first.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TRACKER -->
+
+<section
+    id="tracker"
+    class="page"
+>
+
+<div class="section-title">
+
+<div>
+
+<h2>
+Application Tracker
+</h2>
+
+<p>
+Prototype workflow for application tracking.
+</p>
+
+</div>
+
+</div>
+
+
+<div
+    id="trackerContent"
+    class="card"
+>
+
+<div class="empty">
+Generate a plan first.
+</div>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+Maha Schemes • SIH26130 prototype •
+Information assistant only
+
+</footer>
+
+
+</main>
+
+</div>
+
+</div>
+
+
+<script>
+
+
+/* =====================================================
+   LANDING → PORTAL
+===================================================== */
+
+function openPortal(){
+
+    document.getElementById(
+        "landingPage"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "portal"
+    ).style.display = "block";
+
+
+    showPage("profile");
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+}
+
+
+/* =====================================================
+   PORTAL → LANDING
+===================================================== */
+
+function backToLanding(){
+
+    document.getElementById(
+        "portal"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "landingPage"
+    ).style.display = "block";
+
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+}
+
+
+/* =====================================================
+   PORTAL NAVIGATION
+===================================================== */
+
+const $ =
+    id => document.getElementById(id);
+
+
+function showPage(id){
+
+    document
+        .querySelectorAll(".page")
+        .forEach(
+            page =>
+            page.classList.remove("active")
+        );
+
+
+    $(id).classList.add(
+        "active"
+    );
+
+
+    document
+        .querySelectorAll(".nav")
+        .forEach(
+            button =>
+            button.classList.toggle(
+                "active",
+                button.dataset.page === id
+            )
+        );
+
+
+    window.scrollTo(
+        0,
+        0
+    );
+
+}
+
+
+document
+    .querySelectorAll(".nav")
+    .forEach(
+        button => {
+
+            button.addEventListener(
+                "click",
+                () =>
+                    showPage(
+                        button.dataset.page
+                    )
+            );
+
+        }
+    );
+
+
+/* =====================================================
+   FORM DATA
+===================================================== */
+
+function formData(){
+
+    const ids = [
+
+        "full_name",
+        "email",
+        "business_name",
+        "business_type",
+        "description",
+        "business_stage",
+        "district",
+        "location_type",
+        "investment",
+        "employees",
+        "turnover",
+        "category",
+        "farmer",
+        "woman_led"
+
+    ];
+
+
+    const data = {};
+
+
+    ids.forEach(
+        id => {
+
+            data[id] =
+                $(id).value;
+
+        }
+    );
+
+
+    return data;
+
+}
+
+
+/* =====================================================
+   GENERATE PLAN
+===================================================== */
+
+let lastResult = null;
+
+
+async function generatePlan(){
+
+    const button =
+        $("generateButton");
+
+
+    button.disabled = true;
+
+    button.textContent =
+        "Generating...";
+
+
+    try{
+
+        const response =
+            await fetch(
+                "/api/advice",
+                {
+
+                    method:"POST",
+
+                    headers:{
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body:
+                        JSON.stringify(
+                            formData()
+                        )
+
+                }
+            );
+
+
+        if(!response.ok){
+
+            throw new Error(
+                "Server returned " +
+                response.status
+            );
+
+        }
+
+
+        lastResult =
+            await response.json();
+
+
+        renderAll();
+
+
+        showPage(
+            "plan"
+        );
+
+
+    }
+
+    catch(error){
+
+        alert(
+            "Could not generate the plan.\n\n" +
+            error.message
+        );
+
+    }
+
+
+    finally{
+
+        button.disabled =
+            false;
+
+        button.textContent =
+            "Generate My Personalised Plan →";
+
+    }
+
+}
+
+
+/* =====================================================
+   MONEY
+===================================================== */
+
+function money(value){
+
+    if(
+        value === 0 ||
+        value === "0"
+    ){
+
+        return "₹0";
+
+    }
+
+
+    return "₹" +
+        Number(value)
+        .toLocaleString(
+            "en-IN"
+        );
+
+}
+
+
+/* =====================================================
+   RENDER RESULTS
+===================================================== */
+
+function renderAll(){
+
+    const x =
+        lastResult;
+
+
+    /* INDUSTRY */
+
+    $("industryChip")
+        .textContent =
+        x.industry.industry_name;
+
+
+    $("planSub")
+        .textContent =
+        "Based on your business profile, here is your personalised approval and scheme roadmap.";
+
+
+    /* PLAN */
+
+    $("planContent")
+        .innerHTML = `
+
+<div class="card">
+
+<div class="grid3">
+
+<div class="stat">
+
+<b>
+${x.dashboard.total_approvals}
+</b>
+
+<small>
+Listed approvals
+</small>
+
+</div>
+
+
+<div class="stat">
+
+<b>
+${x.dashboard.documents}
+</b>
+
+<small>
+Document mappings
+</small>
+
+</div>
+
+
+<div class="stat">
+
+<b>
+${x.dashboard.schemes}
+</b>
+
+<small>
+Support options
+</small>
+
+</div>
+
+</div>
+
+
+<div
+    class="notice"
+    style="margin-top:16px"
+>
+
+Detected industry:
+
+<b>
+${x.industry.industry_name}
+</b>
+
+•
+
+Sector:
+
+<b>
+${x.industry.sector}
+</b>
+
+•
+
+MPCB category:
+
+<b>
+${x.industry.mpcb_category}
+</b>
+
+</div>
+
+</div>
+
+
+<div class="grid3">
+
+
+<div class="card">
+
+<h3>
+1. Approvals
+</h3>
+
+<p>
+Review the applicable approval
+checklist and department timelines.
+</p>
+
+<button
+    class="btn"
+    onclick="showPage('approvals')"
+>
+Open Approvals
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+2. Paperwork
+</h3>
+
+<p>
+Review document requirements before
+starting applications.
+</p>
+
+<button
+    class="btn"
+    onclick="showPage('documents')"
+>
+Open Documents
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+3. Support
+</h3>
+
+<p>
+Review relevant schemes and
+business support records.
+</p>
+
+<button
+    class="btn"
+    onclick="showPage('schemes')"
+>
+Open Schemes
+</button>
+
+</div>
+
+
+</div>
+
+
+<div class="notice">
+
+${x.notice}
+
+</div>
+
+`;
+
+
+    /* APPROVALS */
+
+    if(
+        x.approvals.length
+    ){
+
+        $("approvalTable")
+            .innerHTML = `
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Approval
+</th>
+
+<th>
+Level
+</th>
+
+<th>
+Department
+</th>
+
+<th>
+Fee
+</th>
+
+<th>
+Timeline
+</th>
+
+<th>
+Submission
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+${
+
+x.approvals
+.map(
+
+a => `
+
+<tr>
+
+<td>
+<b>
+${a.name}
+</b>
+
+<br>
+
+<small>
+${a.trigger || ""}
+</small>
+
+</td>
+
+
+<td>
+
+<span class="pill">
+
+${a.level}
+
+</span>
+
+</td>
+
+
+<td>
+${a.department}
+</td>
+
+
+<td>
+${money(a.fee)}
+</td>
+
+
+<td>
+${a.timeline} days
+</td>
+
+
+<td>
+${a.submission_mode ||
+  a.application_type}
+</td>
+
+</tr>
+
+`
+
+)
+.join("")
+
+}
+
+</tbody>
+
+</table>
+
+`;
+
+    }
+
+    else{
+
+        $("approvalTable")
+            .innerHTML =
+            `
+            <div class="empty">
+                No matching approval records were found.
+            </div>
+            `;
+
+    }
+
+
+    /* DOCUMENTS */
+
+    if(
+        x.documents.length
+    ){
+
+        $("docTable")
+            .innerHTML = `
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+Document
+</th>
+
+<th>
+Requirement
+</th>
+
+<th>
+Format
+</th>
+
+<th>
+Status
+</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+${
+
+x.documents
+.map(
+
+d => `
+
+<tr>
+
+<td>
+<b>
+${d.document_id}
+</b>
+</td>
+
+<td>
+${d.requirement}
+</td>
+
+<td>
+${d.format ||
+ "Digital copy"}
+</td>
+
+<td>
+
+<span class="pill">
+Pending
+</span>
+
+</td>
+
+</tr>
+
+`
+
+)
+.join("")
+
+}
+
+</tbody>
+
+</table>
+
+`;
+
+    }
+
+    else{
+
+        $("docTable")
+            .innerHTML =
+            `
+            <div class="empty">
+                No document mappings found.
+            </div>
+            `;
+
+    }
+
+
+    /* SCHEMES */
+
+    if(
+        x.schemes.length
+    ){
+
+        $("schemeGrid")
+            .innerHTML =
+
+            x.schemes
+            .map(
+
+                s => `
+
+<div class="scheme">
+
+<h3>
+${s.name}
+</h3>
+
+<p>
+<b>
+Provider:
+</b>
+
+${s.provider}
+</p>
+
+<p>
+<b>
+Best for:
+</b>
+
+${s.best_for}
+</p>
+
+<p>
+<b>
+Support:
+</b>
+
+${s.support}
+</p>
+
+<p>
+<b>
+Eligibility:
+</b>
+
+${s.eligibility}
+</p>
+
+<p>
+<b>
+Application:
+</b>
+
+${s.application}
+</p>
+
+<p>
+<b>
+Charges:
+</b>
+
+${s.charges}
+</p>
+
+
+<div
+    style="margin-top:14px"
+>
+
+<button
+    class="btn green"
+    onclick="alert('Application tracking is available as a prototype action.')"
+>
+Track Application
+</button>
+
+</div>
+
+</div>
+
+`
+
+            )
+            .join("");
+
+    }
+
+    else{
+
+        $("schemeGrid")
+            .innerHTML =
+            `
+            <div class="empty">
+                No scheme matches were found.
+            </div>
+            `;
+
+    }
+
+
+    /* TRACKER */
+
+    $("trackerContent")
+        .innerHTML = `
+
+<div class="grid3">
+
+<div class="stat">
+
+<b>
+${x.dashboard.total_approvals}
+</b>
+
+<small>
+Total approvals
+</small>
+
+</div>
+
+
+<div class="stat">
+
+<b>
+${x.dashboard.completed}
+</b>
+
+<small>
+Completed
+</small>
+
+</div>
+
+
+<div class="stat">
+
+<b>
+${x.dashboard.pending}
+</b>
+
+<small>
+Pending
+</small>
+
+</div>
+
+</div>
+
+
+<div class="timeline">
+
+${
+
+x.timeline
+.map(
+
+step => `
+
+<div
+    class="step
+    ${
+        step.status === "Completed"
+        ? "done"
+        : "ready"
+    }"
+>
+
+<b>
+${step.step}
+</b>
+
+<br>
+
+${step.status}
+
+</div>
+
+`
+
+)
+.join("")
+
+}
+
+</div>
+
+
+<div
+    class="notice"
+    style="margin-top:20px"
+>
+
+Next action:
+review the approval checklist and
+document requirements before starting
+applications.
+
+</div>
+
+`;
+
+}
+
+
+/* =====================================================
+   LANGUAGE SWITCHING
+===================================================== */
+
+document
+.getElementById(
+    "languageSelector"
+)
+.addEventListener(
+    "change",
+    function(){
+
+        const lang =
+            this.value;
+
+
+        if(
+            lang === "mr"
+        ){
+
+            $("heroTag")
+                .textContent =
+                "महाराष्ट्र • नागरिक • उद्योजक • व्यवसाय";
+
+
+            $("heroSubtitle")
+                .textContent =
+                "महाराष्ट्रातील योजना आणि संधींचे डिजिटल प्रवेशद्वार";
+
+
+            $("heroText")
+                .textContent =
+                "नागरिक, शेतकरी, उद्योजक आणि व्यवसायांसाठी सरकारी योजना, व्यवसाय सहाय्य, परवानग्या आणि मार्गदर्शन एकाच ठिकाणी शोधा.";
+
+
+            $("goButton")
+                .textContent =
+                "पुढे जा →";
+
+        }
+
+        else{
+
+            $("heroTag")
+                .textContent =
+                "Maharashtra • Citizens • Entrepreneurs • Businesses";
+
+
+            $("heroSubtitle")
+                .textContent =
+                "Your Gateway to Maharashtra's Schemes & Opportunities";
+
+
+            $("heroText")
+                .textContent =
+                "Discover government schemes, business support, approvals, guidance and opportunities designed to help citizens, farmers, entrepreneurs and businesses grow across Maharashtra.";
+
+
+            $("goButton")
+                .textContent =
+                "GO →";
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
